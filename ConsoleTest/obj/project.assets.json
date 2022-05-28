@@ -1084,11 +1084,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\ConsoleTest\\ConsoleTest.csproj",
+      "projectUniqueName": "C:\\CallCenterAPI\\ConsoleTest\\ConsoleTest.csproj",
       "projectName": "ConsoleTest",
-      "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\ConsoleTest\\ConsoleTest.csproj",
+      "projectPath": "C:\\CallCenterAPI\\ConsoleTest\\ConsoleTest.csproj",
       "packagesPath": "C:\\Users\\justw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\ConsoleTest\\obj\\",
+      "outputPath": "C:\\CallCenterAPI\\ConsoleTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1109,8 +1109,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Services\\Services.csproj"
+            "C:\\CallCenterAPI\\Services\\Services.csproj": {
+              "projectPath": "C:\\CallCenterAPI\\Services\\Services.csproj"
             }
           }
         }

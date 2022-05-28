@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GUaSaXmdpB09Y6+buQAaXpvpDcJZQGkP8k5t4f/v4teVPUtJSyQzWxNCBlDz5YebzFZo2qFkuNWXF4aMyoD0zQ==",
+  "dgSpecHash": "3xEWWSQdTezvpMSLut7NhTaAG7fAnDa2jfGVPuw9HVcnS6SiV55vXvzV4yKzmFHZu+u38eY+MW8Xi8+3cMDU2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\ConsoleTest\\ConsoleTest.csproj",
+  "projectFilePath": "C:\\CallCenterAPI\\ConsoleTest\\ConsoleTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\justw\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\justw\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

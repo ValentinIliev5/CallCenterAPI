@@ -1066,11 +1066,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\CallCenterAPI\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Services\\Services.csproj",
+      "projectPath": "C:\\CallCenterAPI\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\justw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Services\\obj\\",
+      "outputPath": "C:\\CallCenterAPI\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1091,11 +1091,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Data\\Data.csproj"
+            "C:\\CallCenterAPI\\Data\\Data.csproj": {
+              "projectPath": "C:\\CallCenterAPI\\Data\\Data.csproj"
             },
-            "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Repository\\Repository.csproj"
+            "C:\\CallCenterAPI\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\CallCenterAPI\\Repository\\Repository.csproj"
             }
           }
         }

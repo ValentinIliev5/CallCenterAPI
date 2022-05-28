@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n7/G8sFJtqswY0zdQ9yACDFOZmzRuN8BQ4NMXfESR/g/8OQ/VtQuJk7/FwF0wYFuvjPJjL5+56WdN+NHf+TKNQ==",
+  "dgSpecHash": "11xNOsiIHThtdMVWxDRZcV/hdtpqCWwIENzaO+Egld8qkBRsS9fsHL/+O8i2NS+YbAHl93XrikaEqKYvC+zf9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Services\\Services.csproj",
+  "projectFilePath": "C:\\CallCenterAPI\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\justw\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\justw\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
