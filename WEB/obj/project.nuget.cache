@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "l8aDYDW3r80IJxPrxT1W+y0AzPAUJ2v7H/GWl3TaW1pwn+E5woNm+5WQlcfnVO1QdCfatv16N9FgtR+71Q9htA==",
+  "success": true,
+  "projectFilePath": "C:\\CallCenterAPI\\WEB\\WEB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\justw\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\justw\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\justw\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\justw\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\justw\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\justw\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

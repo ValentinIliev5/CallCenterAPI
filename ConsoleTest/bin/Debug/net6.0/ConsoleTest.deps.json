@@ -227,10 +227,20 @@
           "Data.dll": {}
         }
       },
-      "Services/1.0.0": {
+      "Repository/1.0.0": {
         "dependencies": {
           "Data": "1.0.0",
           "EntityFramework": "6.4.4"
+        },
+        "runtime": {
+          "Repository.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "Data": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "Repository": "1.0.0"
         },
         "runtime": {
           "Services.dll": {}
@@ -378,6 +388,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

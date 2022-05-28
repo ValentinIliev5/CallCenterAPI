@@ -1,0 +1,17 @@
+C:\CallCenterAPI\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\CallCenterAPI\Repository\bin\Debug\net6.0\Repository.runtimeconfig.json
+C:\CallCenterAPI\Repository\bin\Debug\net6.0\Repository.dll
+C:\CallCenterAPI\Repository\bin\Debug\net6.0\Repository.pdb
+C:\CallCenterAPI\Repository\bin\Debug\net6.0\Data.dll
+C:\CallCenterAPI\Repository\bin\Debug\net6.0\Data.pdb
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.dll
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.pdb
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+C:\CallCenterAPI\Repository\obj\Debug\net6.0\ref\Repository.dll

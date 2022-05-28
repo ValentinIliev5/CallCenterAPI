@@ -19,7 +19,6 @@ namespace Services.Implementations
             {
                 foreach (var item in unitOfWork.CallsRepository.Get())
                 {
-
                     callDTOs.Add(new CallDTO
                     {
                         Id = item.Id,
@@ -30,7 +29,6 @@ namespace Services.Implementations
                         ClientId = item.ClientId,
                         
                     });
-
                 }
             }
             return callDTOs;
@@ -82,9 +80,7 @@ namespace Services.Implementations
             }
             catch (Exception)
             {
-
                 return false;
-
             }
         }
 
@@ -104,7 +100,6 @@ namespace Services.Implementations
             {
                 return false;
             }
-
         }
     }
 }
