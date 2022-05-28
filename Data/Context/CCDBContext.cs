@@ -10,7 +10,9 @@ namespace Data.Context
 {
     public class CCDBContext : DbContext
     {
-        public CCDBContext() : base(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString)
+        //"Server=.;Database=CallCenterDB;Trusted_Connection=True;"
+        //ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString
+        public CCDBContext() : base("Server=.;Database=CallCenterDB;Trusted_Connection=True;")
         {
 
         }

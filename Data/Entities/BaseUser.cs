@@ -16,7 +16,7 @@ namespace Data.Entities
 
         public string PhoneNumber { get; set; }
 
-        public DateTime CreatedOn { get; set; }
+        public DateTime? CreatedOn { get; set; }
 
         public bool IsDeleted { get; set; }
 

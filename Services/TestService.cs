@@ -19,5 +19,10 @@ namespace Services
         {
             return context.Clients.First().PhoneNumber.ToString();
         }
+
+        public string GetEmployeeName()
+        {
+            return context.Employees.First().Name.ToString();
+        }
     }
 }

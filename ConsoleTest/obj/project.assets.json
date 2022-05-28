@@ -289,12 +289,27 @@
           "bin/placeholder/Data.dll": {}
         }
       },
-      "Services/1.0.0": {
+      "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Data": "1.0.0",
           "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Data": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "Repository": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}
@@ -1045,6 +1060,11 @@
       "type": "project",
       "path": "../Data/Data.csproj",
       "msbuildProject": "../Data/Data.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     },
     "Services/1.0.0": {
       "type": "project",

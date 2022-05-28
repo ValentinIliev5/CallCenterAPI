@@ -288,6 +288,20 @@
         "runtime": {
           "bin/placeholder/Data.dll": {}
         }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Data": "1.0.0",
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -1031,12 +1045,18 @@
       "type": "project",
       "path": "../Data/Data.csproj",
       "msbuildProject": "../Data/Data.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Data >= 1.0.0",
-      "EntityFramework >= 6.4.4"
+      "EntityFramework >= 6.4.4",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1073,6 +1093,9 @@
           "projectReferences": {
             "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Data\\Data.csproj"
+            },
+            "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\justw\\source\\repos\\CallCenterAPI\\Repository\\Repository.csproj"
             }
           }
         }

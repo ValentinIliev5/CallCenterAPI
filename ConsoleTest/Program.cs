@@ -1,4 +1,4 @@
 ﻿using Services;
 
-//TestService ts = new TestService();
-//Console.WriteLine(ts.getClientName()+ " "+ts.getClientPhone());
+TestService ts = new TestService();
+Console.WriteLine(ts.GetEmployeeName());
