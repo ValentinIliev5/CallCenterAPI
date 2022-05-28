@@ -14,7 +14,7 @@ namespace Repository
         private GenericRepository<Call> callsRepository;
         private GenericRepository<Client> clientsRepository;
         private GenericRepository<Employee> employeesRepository;
-        public GenericRepository<Call> StudentRepository
+        public GenericRepository<Call> CallsRepository
         {
             get
             {

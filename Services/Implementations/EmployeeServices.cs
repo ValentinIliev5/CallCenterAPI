@@ -35,13 +35,13 @@ namespace Services.Implementations
             return employeeDTOs;
         }
 
-        public EmployeeDTO GetByID()
+        public EmployeeDTO GetByID(int id)
         { 
             EmployeeDTO employeeDTO = new EmployeeDTO();
 
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                Employee employee = unitOfWork.EmployeesRepository.GetByID(employeeDTO.Id);
+                Employee employee = unitOfWork.EmployeesRepository.GetByID(id);
                 if (employee!=null)
                 {
                     employeeDTO = new EmployeeDTO

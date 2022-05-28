@@ -70,6 +70,10 @@
     <Compile Include="Migrations\202205280940341_baseChange.designer.cs">
       <DependentUpon>202205280940341_baseChange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205281515550_ClientCalls.cs" />
+    <Compile Include="Migrations\202205281515550_ClientCalls.designer.cs">
+      <DependentUpon>202205281515550_ClientCalls.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205280940341_baseChange.resx">
       <DependentUpon>202205280940341_baseChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205281515550_ClientCalls.resx">
+      <DependentUpon>202205281515550_ClientCalls.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

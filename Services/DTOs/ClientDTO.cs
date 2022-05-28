@@ -15,6 +15,6 @@ namespace Services.DTOs
 
         public string PhoneNumber { get; set; }
 
-        public int CallsMade { get; set; }
+        public int? CallsMade { get; set; }
     }
 }

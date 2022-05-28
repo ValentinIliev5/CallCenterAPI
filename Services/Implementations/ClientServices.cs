@@ -34,13 +34,13 @@ namespace Services.Implementations
             return clientDTOs;
         }
 
-        public ClientDTO GetByID()
+        public ClientDTO GetByID(int id)
         {
             ClientDTO clientDTO = new ClientDTO();
 
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                Client client = unitOfWork.ClientsRepository.GetByID(clientDTO.Id);
+                Client client = unitOfWork.ClientsRepository.GetByID(id);
                 if (client != null)
                 {
                     clientDTO = new ClientDTO
@@ -63,8 +63,7 @@ namespace Services.Implementations
                 Id = clientDTO.Id,
                 Name = clientDTO.Name,
                 Age = clientDTO.Age,
-                PhoneNumber = clientDTO.PhoneNumber,
-                CallsMade= clientDTO.CallsMade
+                PhoneNumber = clientDTO.PhoneNumber
             };
 
             try
@@ -91,7 +90,7 @@ namespace Services.Implementations
                 using (UnitOfWork unitOfWork = new UnitOfWork())
                 {
                     Client client = unitOfWork.ClientsRepository.GetByID(id);
-                    unitOfWork.EmployeesRepository.Delete(client);
+                    unitOfWork.ClientsRepository.Delete(client);
                     unitOfWork.Save();
                 }
                 return true;
