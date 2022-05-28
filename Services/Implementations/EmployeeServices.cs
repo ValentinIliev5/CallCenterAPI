@@ -13,14 +13,14 @@ namespace Services.Implementations
     {
         public List<EmployeeDTO> Get()
         {
-            List<EmployeeDTO> nationalitiesDto = new List<EmployeeDTO>();
+            List<EmployeeDTO> employeeDTOs = new List<EmployeeDTO>();
 
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 foreach (var item in unitOfWork.EmployeesRepository.Get())
                 {
 
-                    nationalitiesDto.Add(new EmployeeDTO
+                    employeeDTOs.Add(new EmployeeDTO
                     {
                         Id = item.Id,
                         Name = item.Name,
@@ -32,7 +32,7 @@ namespace Services.Implementations
 
                 }
             }
-            return nationalitiesDto;
+            return employeeDTOs;
         }
 
         public EmployeeDTO GetByID()
@@ -81,7 +81,6 @@ namespace Services.Implementations
             }
             catch (Exception)
             {
-
                 return false;
 
             }
