@@ -57,7 +57,66 @@ namespace Services.Implementations
             }
             return callDTO;
         }
-
+        public int GetEmployeeId(string number)
+        { 
+            int employeeId = 0;
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                employeeId = unitOfWork.EmployeesRepository.Get(w => w.PhoneNumber == number).First().Id;
+            }
+            return employeeId;
+        }
+        public int GetClientId(string number)
+        {
+            int employeeId = 0;
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                employeeId = unitOfWork.ClientsRepository.Get(w => w.PhoneNumber == number).First().Id;
+            }
+            return employeeId;
+        }
+        public List<CallDTO> GetByEmployeePhone(string number)
+        {
+            List<CallDTO> callDTOs = new List<CallDTO>();
+            int employeeId = GetEmployeeId(number);
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                foreach (var item in unitOfWork.CallsRepository.Get(w=>w.EmployeeId == employeeId))
+                {
+                    callDTOs.Add(new CallDTO
+                    {
+                        Id = item.Id,
+                        DateOfCall = item.DateOfCall.Date.ToString("dd-MM-yyyy"),
+                        StartOfCall = item.StartOfCall.TimeOfDay.ToString(),
+                        EndOfCall = item.EndOfCall.TimeOfDay.ToString(),
+                        EmployeeId = item.EmployeeId,
+                        ClientId = item.ClientId,
+                    });
+                }
+            }
+            return callDTOs;
+        }
+        public List<CallDTO> GetByClientPhone(string number)
+        {
+            List<CallDTO> callDTOs = new List<CallDTO>();
+            int clientId = GetClientId(number);
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                foreach (var item in unitOfWork.CallsRepository.Get(w => w.ClientId == clientId))
+                {
+                    callDTOs.Add(new CallDTO
+                    {
+                        Id = item.Id,
+                        DateOfCall = item.DateOfCall.Date.ToString("dd-MM-yyyy"),
+                        StartOfCall = item.StartOfCall.TimeOfDay.ToString(),
+                        EndOfCall = item.EndOfCall.TimeOfDay.ToString(),
+                        EmployeeId = item.EmployeeId,
+                        ClientId = item.ClientId,
+                    });
+                }
+            }
+            return callDTOs;
+        }
         public bool Save(CallDTO callDTO)
         {
             var getStart = (callDTO.DateOfCall + " " + callDTO.StartOfCall).Split(' ', '-',':','.').Select(w => int.Parse(w)).ToList();
@@ -78,7 +137,9 @@ namespace Services.Implementations
             {
                 using (UnitOfWork unitOfWork = new UnitOfWork())
                 {
+                    
                     unitOfWork.CallsRepository.Insert(call);
+                    unitOfWork.ClientsRepository.GetByID(call.ClientId).CallsMade++;
                     unitOfWork.Save();
                 }
                 return true;

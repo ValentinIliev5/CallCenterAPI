@@ -55,6 +55,27 @@ namespace Services.Implementations
             }
             return clientDTO;
         }
+        public List<ClientDTO> GetByName(string name)
+        {
+            List<ClientDTO> clientDTOs = new List<ClientDTO>();
+
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                foreach (var item in unitOfWork.ClientsRepository.Get(w => w.Name.Contains(name)))
+                {
+                    clientDTOs.Add(new ClientDTO
+                    {
+                        Id = item.Id,
+                        Name = item.Name,
+                        Age = item.Age,
+                        PhoneNumber = item.PhoneNumber,
+                        CallsMade = item.CallsMade
+                    });
+                }
+            }
+            return clientDTOs;
+
+        }
 
         public bool Save(ClientDTO clientDTO)
         {

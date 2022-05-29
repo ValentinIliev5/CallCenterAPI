@@ -57,7 +57,28 @@ namespace Services.Implementations
             }
             return employeeDTO;
         }
+        public List<EmployeeDTO> GetByName(string name)
+        {
+            List<EmployeeDTO> employeeDTOs = new List<EmployeeDTO>();
 
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                foreach (var item in unitOfWork.EmployeesRepository.Get(w=>w.Name.Contains(name)))
+                {
+                    employeeDTOs.Add(new EmployeeDTO
+                    {
+                        Id = item.Id,
+                        Name = item.Name,
+                        Age = item.Age,
+                        PhoneNumber = item.PhoneNumber,
+                        Salary = item.Salary,
+                        Email = item.Email
+                    });
+                } 
+            }
+            return employeeDTOs;
+
+        }
         public bool Save(EmployeeDTO employeeDTO)
         {
             Employee employee = new Employee

@@ -15,10 +15,18 @@ namespace WEB.Controllers
         {
             return services.Get();
         }
-        [HttpGet("id")]
+        [HttpGet()]
+        [Route("GetById/{id}")]
         public EmployeeDTO GetByID(int id)
         {
             return services.GetByID(id);
+        }
+
+        [HttpGet()]
+        [Route("GetByName/{name}")]
+        public List<EmployeeDTO> GetByName(string name)
+        {
+            return services.GetByName(name);
         }
 
         [HttpPost]
