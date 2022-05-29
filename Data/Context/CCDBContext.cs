@@ -1,5 +1,6 @@
 ﻿using Data.Entities;
 using System.Data.Entity;
+using Microsoft.Extensions.Configuration;
 using System.Configuration;
 using System;
 
@@ -9,14 +10,12 @@ namespace Data.Context
     {
         public static string GetConnectionString()
         {
-            // The connection string needs to exist in the project that executes, not library projects.
-            // data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true",
-            // machine.config wich is defualt database conneciton string
-            return ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            string connString ="";
+            return connString;
         }
         //"Server=.;Database=CallCenterDB;Trusted_Connection=True;"
         //ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString
-        public CCDBContext() : base(GetConnectionString())
+        public CCDBContext() : base("Server=.;Database=CallCenterDB;Trusted_Connection=True;")
         {
 
         }

@@ -45,3 +45,14 @@ C:\CallCenterAPI\Data\obj\Debug\Data.csproj.CopyComplete
 C:\CallCenterAPI\Data\obj\Debug\Data.dll
 C:\CallCenterAPI\Data\obj\Debug\Data.pdb
 C:\CallCenterAPI\Data\obj\Debug\Data.Migrations.ClientCalls.resources
+C:\CallCenterAPI\Data\bin\Debug\Data.dll.config
+C:\CallCenterAPI\Data\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\CallCenterAPI\Data\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\CallCenterAPI\Data\bin\Debug\System.Buffers.dll
+C:\CallCenterAPI\Data\bin\Debug\System.Memory.dll
+C:\CallCenterAPI\Data\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\CallCenterAPI\Data\bin\Debug\System.ValueTuple.dll
+C:\CallCenterAPI\Data\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\CallCenterAPI\Data\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\CallCenterAPI\Data\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\CallCenterAPI\Data\bin\Debug\System.ValueTuple.xml
