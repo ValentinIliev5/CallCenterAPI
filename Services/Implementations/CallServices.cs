@@ -3,6 +3,7 @@ using Repository;
 using Services.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,9 @@ namespace Services.Implementations
                     callDTOs.Add(new CallDTO
                     {
                         Id = item.Id,
-                        DateOfCall = item.DateOfCall,
-                        StartOfCall = item.StartOfCall,
-                        EndOfCall = item.EndOfCall,
+                        DateOfCall = item.DateOfCall.Date.ToString("dd-MM-yyyy"),
+                        StartOfCall = item.StartOfCall.TimeOfDay.ToString(),
+                        EndOfCall = item.EndOfCall.TimeOfDay.ToString(),
                         EmployeeId = item.EmployeeId,
                         ClientId = item.ClientId,
                         
@@ -46,9 +47,9 @@ namespace Services.Implementations
                     callDTO = new CallDTO
                     {
                         Id = call.Id,
-                        DateOfCall = call.DateOfCall,
-                        StartOfCall = call.StartOfCall,
-                        EndOfCall = call.EndOfCall,
+                        DateOfCall = call.DateOfCall.Date.ToString("dd-MM-yyyy"),
+                        StartOfCall = call.StartOfCall.TimeOfDay.ToString(),
+                        EndOfCall = call.EndOfCall.TimeOfDay.ToString(),
                         EmployeeId = call.EmployeeId,
                         ClientId = call.ClientId
                     };
@@ -59,12 +60,16 @@ namespace Services.Implementations
 
         public bool Save(CallDTO callDTO)
         {
+            var getStart = (callDTO.DateOfCall + " " + callDTO.StartOfCall).Split(' ', '-',':','.').Select(w => int.Parse(w)).ToList();
+            var getEnd = (callDTO.DateOfCall + " " + callDTO.EndOfCall).Split(' ', '-', ':', '.').Select(w=>int.Parse(w)).ToList();
+
             Call call = new Call
             {
+
                 Id = callDTO.Id,
-                DateOfCall = callDTO.DateOfCall,
-                StartOfCall = callDTO.StartOfCall,
-                EndOfCall = callDTO.EndOfCall,
+                DateOfCall = new DateTime(getStart[2],getStart[1],getStart[0]),
+                StartOfCall = new DateTime(getStart[2], getStart[1], getStart[0], getStart[3], getStart[4], getStart[5]),
+                EndOfCall = new DateTime(getEnd[2], getEnd[1], getEnd[0], getEnd[3], getEnd[4], getEnd[5]),
                 EmployeeId = callDTO.EmployeeId,
                 ClientId = callDTO.ClientId
             };

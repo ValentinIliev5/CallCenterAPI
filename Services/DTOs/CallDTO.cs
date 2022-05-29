@@ -10,11 +10,11 @@ namespace Services.DTOs
     {
         public int Id { get; set; }
 
-        public DateTime DateOfCall { get; set; }
+        public string DateOfCall { get; set; }
 
-        public DateTime StartOfCall { get; set; }
+        public string StartOfCall { get; set; }
 
-        public DateTime EndOfCall { get; set; }
+        public string EndOfCall { get; set; }
 
         public int EmployeeId { get; set; }
 
