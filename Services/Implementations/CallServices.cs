@@ -26,6 +26,7 @@ namespace Services.Implementations
                         DateOfCall = item.DateOfCall.Date.ToString("dd-MM-yyyy"),
                         StartOfCall = item.StartOfCall.TimeOfDay.ToString(),
                         EndOfCall = item.EndOfCall.TimeOfDay.ToString(),
+                        Details = item.Details,
                         EmployeeId = item.EmployeeId,
                         ClientId = item.ClientId,
                         
@@ -50,6 +51,7 @@ namespace Services.Implementations
                         DateOfCall = call.DateOfCall.Date.ToString("dd-MM-yyyy"),
                         StartOfCall = call.StartOfCall.TimeOfDay.ToString(),
                         EndOfCall = call.EndOfCall.TimeOfDay.ToString(),
+                        Details =call.Details,
                         EmployeeId = call.EmployeeId,
                         ClientId = call.ClientId
                     };
@@ -89,6 +91,7 @@ namespace Services.Implementations
                         DateOfCall = item.DateOfCall.Date.ToString("dd-MM-yyyy"),
                         StartOfCall = item.StartOfCall.TimeOfDay.ToString(),
                         EndOfCall = item.EndOfCall.TimeOfDay.ToString(),
+                        Details = item.Details,
                         EmployeeId = item.EmployeeId,
                         ClientId = item.ClientId,
                     });
@@ -110,6 +113,7 @@ namespace Services.Implementations
                         DateOfCall = item.DateOfCall.Date.ToString("dd-MM-yyyy"),
                         StartOfCall = item.StartOfCall.TimeOfDay.ToString(),
                         EndOfCall = item.EndOfCall.TimeOfDay.ToString(),
+                        Details = item.Details,
                         EmployeeId = item.EmployeeId,
                         ClientId = item.ClientId,
                     });
@@ -129,6 +133,7 @@ namespace Services.Implementations
                 DateOfCall = new DateTime(getStart[2],getStart[1],getStart[0]),
                 StartOfCall = new DateTime(getStart[2], getStart[1], getStart[0], getStart[3], getStart[4], getStart[5]),
                 EndOfCall = new DateTime(getEnd[2], getEnd[1], getEnd[0], getEnd[3], getEnd[4], getEnd[5]),
+                Details = callDTO.Details,
                 EmployeeId = callDTO.EmployeeId,
                 ClientId = callDTO.ClientId
             };

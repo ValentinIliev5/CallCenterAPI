@@ -56,3 +56,5 @@ C:\CallCenterAPI\Data\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.
 C:\CallCenterAPI\Data\bin\Debug\Microsoft.Extensions.Primitives.xml
 C:\CallCenterAPI\Data\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\CallCenterAPI\Data\bin\Debug\System.ValueTuple.xml
+C:\CallCenterAPI\Data\obj\Debug\Data.Migrations.restrictions.resources
+C:\CallCenterAPI\Data\obj\Debug\Data.Migrations.CallsUpdate.resources

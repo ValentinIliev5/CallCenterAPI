@@ -12,7 +12,7 @@ namespace Data.Entities
         [Key]
         public int Id { get; set; }
         public float Salary { get; set; }
-
+        [MaxLength(50)]
         public string Email { get; set; }
 
 

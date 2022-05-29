@@ -18,6 +18,8 @@ namespace Data.Entities
         public DateTime StartOfCall { get; set; }
 
         public DateTime EndOfCall { get; set; }
+        [MaxLength(20)]
+        public string Details { get; set; }
 
         [ForeignKey("EmployeeId")]
         public Employee Employee { get; set; }

@@ -16,6 +16,7 @@ namespace Services.DTOs
 
         public string EndOfCall { get; set; }
 
+        public string Details { get; set; }
         public int EmployeeId { get; set; }
 
         public int ClientId { get; set; }

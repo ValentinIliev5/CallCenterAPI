@@ -123,3 +123,5 @@ C:\CallCenterAPI\ConsoleTest\obj\Debug\net6.0\ConsoleTest.pdb
 C:\CallCenterAPI\ConsoleTest\obj\Debug\net6.0\ConsoleTest.genruntimeconfig.cache
 C:\CallCenterAPI\ConsoleTest\obj\Debug\net6.0\ref\ConsoleTest.dll
 C:\CallCenterAPI\ConsoleTest\bin\Debug\net6.0\ConsoleTest.dll.config
+C:\CallCenterAPI\ConsoleTest\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\CallCenterAPI\ConsoleTest\bin\Debug\net6.0\Data.dll.config

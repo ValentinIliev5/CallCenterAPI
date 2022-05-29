@@ -80,6 +80,14 @@
     <Compile Include="Migrations\202205281515550_ClientCalls.designer.cs">
       <DependentUpon>202205281515550_ClientCalls.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205291514169_restrictions.cs" />
+    <Compile Include="Migrations\202205291514169_restrictions.designer.cs">
+      <DependentUpon>202205291514169_restrictions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205291516160_CallsUpdate.cs" />
+    <Compile Include="Migrations\202205291516160_CallsUpdate.designer.cs">
+      <DependentUpon>202205291516160_CallsUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,6 +107,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205281515550_ClientCalls.resx">
       <DependentUpon>202205281515550_ClientCalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205291514169_restrictions.resx">
+      <DependentUpon>202205291514169_restrictions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205291516160_CallsUpdate.resx">
+      <DependentUpon>202205291516160_CallsUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

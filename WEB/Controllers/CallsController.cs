@@ -16,19 +16,19 @@ namespace WEB.Controllers
             return services.Get();
         }
         [HttpGet()]
-        [Route("GetByID/id")]
+        [Route("GetByID/{id}")]
         public CallDTO GetByID(int id)
         {
             return services.GetByID(id);
         }
         [HttpGet()]
-        [Route("GetByEmployee/number")]
+        [Route("GetByEmployee/{number}")]
         public List<CallDTO> GetByEmployee(string number )
         {
             return services.GetByEmployeePhone(number);
         }
         [HttpGet()]
-        [Route("GetByClient/number")]
+        [Route("GetByClient/{number}")]
         public List<CallDTO> GetByClient(string number)
         {
             return services.GetByClientPhone(number);

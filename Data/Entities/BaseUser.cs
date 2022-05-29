@@ -9,11 +9,11 @@ namespace Data.Entities
 {
     public abstract class BaseUser
     {
-        
+        [MaxLength(20)]
         public string Name { get; set; }
 
         public int Age { get; set; }
-
+        [MaxLength(15)]
         public string PhoneNumber { get; set; }
 
         public DateTime? CreatedOn { get; set; }
